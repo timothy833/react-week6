@@ -78,7 +78,7 @@ export default function ProductsPage () {
                             <td>
                             <div className="btn-group btn-group-sm">
                                 <Link
-                                    to={`/products/${product.id}`}
+                                    to={`/frountLayout/products/${product.id}`}
                                     className="btn btn-outline-secondary"
                                 >
                                     查看更多

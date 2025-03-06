@@ -5,10 +5,15 @@ import ProductsPage from "../pages/ProuuctsPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import CartPage from "../pages/CartPage";
 import NotFound from "../pages/NotFound";
+import LoginPage from "../pages/LoginPage";
 
 const router = createHashRouter([
     {
         path: "/",
+        element: <LoginPage />,
+    },
+    {
+        path: "/frountLayout",
         element: <FrountLayout />,
         children: [
             {

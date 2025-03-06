@@ -82,7 +82,11 @@ export default function CartPage () {
 // console.log(register('email'));
 
     const onSubmit = handleSubmit((data)=>{
-        console.log(data);
+        if(cart.carts.length === 0) {
+            alert("購物車沒有商品，不能提交！");
+            return;
+        }
+        // console.log(data);
         const { message, ...user } = data;
         const userInfo = {
             data : {
